@@ -1,6 +1,3 @@
-
-
-// Client (клиентский код)
 public class Main {
     public static void main(String[] args) {
         CarDirector director = new CarDirector();
