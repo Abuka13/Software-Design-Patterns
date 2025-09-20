@@ -3,9 +3,13 @@ interface Engine {
 }
 
 class ElectricEngine implements Engine {
-    public String getType() { return "Electric"; }
+    public String getType() {
+        return "Electric";
+    }
 }
 
 class GasolineEngine implements Engine {
-    public String getType() { return "Gasoline"; }
+    public String getType() {
+        return "Gasoline";
+    }
 }

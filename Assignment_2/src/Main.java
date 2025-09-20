@@ -3,22 +3,25 @@ public class Main {
         CarFactory carFactory = new CarFactory();
         EngineFactory engineFactory = new EngineFactory();
 
-        Car car = carFactory.createCar("Tesla");
-        Engine engine = engineFactory.createEngine("Gasoline");
+        Car tesla3 = carFactory.createCar("Tesla3");
+        Engine electric = engineFactory.createEngine("Electric");
 
-        System.out.println(car.getName() + " + " + engine.getType());
+        Car bmwX5 = carFactory.createCar("BMWX5");
+        Engine gasoline = engineFactory.createEngine("Gasoline");
 
+        System.out.println(tesla3.getName() + " + " + electric.getType());
+        System.out.println(bmwX5.getName() + " + " + gasoline.getType());
 
-        CarCompanyFactory teslaCompany = new TeslaFactory();
-        CarCompanyFactory bmwCompany = new BMWFactory();
+        CarCompanyFactory teslaFactory = new TeslaFactory();
+        CarCompanyFactory bmwFactory = new BMWFactory();
 
-        Car teslaCar = teslaCompany.createCar();
-        Engine teslaEngine = teslaCompany.createEngine();
+        Car teslaS = teslaFactory.createCar("TeslaS");
+        Engine teslaEngine = teslaFactory.createEngine();
 
-        Car bmwCar = bmwCompany.createCar();
-        Engine bmwEngine = bmwCompany.createEngine();
+        Car bmwM4 = bmwFactory.createCar("BMWM4");
+        Engine bmwEngine = bmwFactory.createEngine();
 
-        System.out.println(teslaCar.getName() + " + " + teslaEngine.getType());
-        System.out.println(bmwCar.getName() + " + " + bmwEngine.getType());
+        System.out.println(teslaS.getName() + " + " + teslaEngine.getType());
+        System.out.println(bmwM4.getName() + " + " + bmwEngine.getType());
     }
 }

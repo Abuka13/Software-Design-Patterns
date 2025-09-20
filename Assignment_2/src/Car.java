@@ -2,10 +2,26 @@ interface Car {
     String getName();
 }
 
-class Tesla implements Car {
-    public String getName() { return "Tesla"; }
+class TeslaModelS implements Car {
+    public String getName() {
+        return "Tesla Model S";
+    }
 }
 
-class BMW implements Car {
-    public String getName() { return "BMW"; }
+class TeslaModel3 implements Car {
+    public String getName() {
+        return "Tesla Model 3";
+    }
+}
+
+class BMWX5 implements Car {
+    public String getName() {
+        return "BMW X5";
+    }
+}
+
+class BMWM4 implements Car {
+    public String getName() {
+        return "BMW M4";
+    }
 }
