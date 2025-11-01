@@ -58,6 +58,22 @@ class CashbackDecorator extends PaymentDecorator {
         return super.pay(amount) + " Cashback earned: $" + cashback;
     }
 }
+class CurrencyAdapterDecorator extends PaymentDecorator {
+    private double amount;
+
+
+    public CurrencyAdapterDecorator(Payment decoratedPayment, double amount) {
+        super(decoratedPayment);
+        this.amount = amount;
+    }
+
+    @Override
+    public String pay(double amount) {
+        double cashback = amount *
+        return super.pay(amount) + " Cashback earned: $" + cashback;
+    }
+}
+
 
 class FraudDetectionDecorator extends PaymentDecorator {
     public FraudDetectionDecorator(Payment decoratedPayment) {
